@@ -76,16 +76,7 @@ tr:nth-child(odd) {
     align-items: center; /* Centrer les éléments */
 }
 
-/* Liens */
-a {
-    color: #ffdd57; /* Couleur des liens */
-    text-decoration: none; /* Supprime le soulignement */
-    padding: 10px 15px;
-    border-radius: 5px; /* Coins arrondis */
-    background-color: #1b1b2f; /* Fond sombre pour les liens */
-    transition: background-color 0.3s ease, transform 0.2s; /* Transition pour le survol */
-    margin: 5px 0; /* Ajout d'espace entre les liens */
-}
+
 
 a:hover {
     background-color: #ffdd57; /* Fond doré au survol */
