@@ -1,0 +1,105 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif; /* Police moderne */
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a2e; /* Fond bleu nuit */
+    color: #ffffff; /* Texte clair pour le contraste */
+}
+
+/* Style des titres */
+h1 {
+    font-size: 36px;
+    color: #ffdd57; /* Couleur jaune vif pour les titres */
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre pour le texte */
+}
+
+/* Conteneur pour les iframes */
+#container {
+    display: flex; /* Flexbox pour aligner les iframes côte à côte */
+    justify-content: space-between; /* Espacement égal entre les iframes */
+    flex-wrap: wrap; /* Permettre le passage à la ligne sur les petits écrans */
+}
+
+/* Style des iframes */
+iframe {
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 12px; /* Coins arrondis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Ombre pour profondeur */
+    transition: transform 0.3s ease; /* Animation de transformation */
+    width: 45%; /* Largeur ajustée pour plus de flexibilité */
+    height: 600px; /* Hauteur standard pour les iframes */
+}
+
+/* Transformation au survol des iframes */
+iframe:hover {
+    transform: scale(1.02); /* Légère augmentation de la taille au survol */
+}
+
+/* Style pour les tables */
+table {
+    width: 100%; /* Table pleine largeur */
+    border-collapse: collapse; /* Suppression des espaces entre les bordures */
+    margin: 20px 0; /* Marges autour de la table */
+    border-radius: 12px; /* Coins arrondis */
+    overflow: hidden; /* Évite le débordement du contenu */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Ombre pour profondeur */
+}
+
+td {
+    padding: 15px; /* Espace interne des cellules */
+    text-align: center; /* Alignement du texte */
+    border: 2px solid #ffdd57; /* Bordure dorée pour les cellules */
+    background-color: rgba(255, 221, 87, 0.2); /* Fond doré clair et semi-transparent */
+    color: #fff; /* Texte blanc dans les cellules */
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 221, 87, 0.3); /* Couleur dorée pour les lignes paires */
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(255, 221, 87, 0.4); /* Couleur dorée pour les lignes impaires */
+}
+
+/* Style pour le sommaire */
+#sommaire {
+    background-color: rgba(76, 175, 80, 0.8); /* Fond lumineux semi-transparent */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombre pour profondeur */
+    margin-bottom: 20px;
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Empiler les éléments verticalement */
+    align-items: center; /* Centrer les éléments */
+}
+
+/* Liens */
+a {
+    color: #ffdd57; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+    padding: 10px 15px;
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #1b1b2f; /* Fond sombre pour les liens */
+    transition: background-color 0.3s ease, transform 0.2s; /* Transition pour le survol */
+    margin: 5px 0; /* Ajout d'espace entre les liens */
+}
+
+a:hover {
+    background-color: #ffdd57; /* Fond doré au survol */
+    color: #1a1a2e; /* Texte sombre au survol pour contraste */
+    transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+
+/* Media queries pour responsive */
+@media (max-width: 800px) {
+    body {
+        padding: 10px; /* Réduction du padding pour petits écrans */
+    }
+    a {
+        padding: 8px 10px; /* Ajustement des liens */
+    }
+}
